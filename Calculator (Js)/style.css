@@ -1,0 +1,40 @@
+.Tbutton {
+    cursor: crosshair;
+    /* visibility: hidden; */
+    display: none;
+    position: fixed;
+    top : 20px;
+    right: 20px ;
+    padding-inline: 0.5em;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+    border-radius: 10%;
+    background: rgb(0, 0, 0);
+    cursor: pointer;
+    /* border: 2px solid #edf1f4; */
+    color: rgb(255, 255, 255);
+}
+
+.btn {
+    
+    height: 3em;
+    width: 3em;
+    border-radius: 50%;
+    background-color: black;
+    position: fixed;
+    top : 20px;
+    right: 20px ;
+    padding-inline: 0.5em;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+}
+
+.Tbutton:hover, {
+    /* visibility: visible; */
+    display: block;
+    
+}
+
+.btn:hover {
+    visibility: hidden;
+}
