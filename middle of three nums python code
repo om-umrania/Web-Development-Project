@@ -1,0 +1,24 @@
+a = int(input("num1 : "))
+b = int(input("num2 : "))
+c = int(input("num3 : "))
+
+
+
+if (a > b and a > c):
+    fin_max = a
+    if b > c:
+        print (b)
+    else:
+        print (c)
+elif (b > a and b > c):
+    fin_max = b
+    if a > c:
+        print (a)
+    else:
+        print (c)
+elif (c > a and c > b):
+    fin_man = c
+    if (a > b):
+        print (a)
+    else:
+        print (b)
