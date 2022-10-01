@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .Theme {
+            width: 100px;
+            height: 50px;
+            font-size: 0em;
+        }
+        .Theme:hover {
+            font-size: 2em;
+            color: red;
+            animation: text-size 0.4s ease-out;
+        }
+        .Circle {
+            position: relative;
+            text-align: center;
+            height:4em;
+            width: 4em ;
+            border-radius: 50%;
+            background-color: black;
+            /* background: transparent; */
+            animation: collapse 0.4s ease-out;
+        }
+        .Circle:hover {
+            height: 50px;
+            width: 100px;
+            animation: expand 0.4s ease-in-out;
+            background-color: black;
+        }
+        @keyframes text-size {
+            from {font-size: 0;}
+            to {font-size: 2em;}
+        }
+        @keyframes expand {
+            from {width:50px;height:50px;overflow:hidden;}
+            to {width: 100px;height:50px;overflow:auto;}
+        }
+        @keyframes collapse {
+            from {width:100px;}
+            to {width: 50px;}
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div class="Circle">
+        <div class="Theme">
+            Theme
+        </div>
+    </div>
+</body>
+</html>
